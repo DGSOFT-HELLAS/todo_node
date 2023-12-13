@@ -1,8 +1,11 @@
 // server.js
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const todoRoutes = require('./controllers/todos');
 const bodyParser = require('body-parser');
+
+
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -19,6 +22,9 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
+
+
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/todos', todoRoutes);
 

@@ -34,5 +34,4 @@ This creates a new todo... You have all the methods available on the Postman Col
 
 DOWNLOAD mongoDBCompas and connect with this string:
 mongodb+srv://giannis:123ccm@cluster0.m4tna3q.mongodb.net/todo
-
 Happy Coding!!!
